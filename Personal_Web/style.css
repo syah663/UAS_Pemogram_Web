@@ -1,0 +1,204 @@
+section{
+    padding-top: 100px;
+    padding-bottom: 50px;
+}
+
+/*hero  */
+.hero-box .box p{
+    width: 500px;
+}
+.hero-box .box img{
+    width: 400px;
+}
+
+@media (max-width: 992px) {
+    .hero-box .box p{
+        font-size: 16;
+    width: 300px;
+}
+.hero-box .box img{
+    width: 300px;
+}
+}
+
+@media (max-width: 768px){
+    .hero{
+        padding-top: 50px;
+    }
+    .hero-box{
+        text-align: center
+        ;
+    }
+    .hero-box .hero{
+        width: 100%;
+    }
+}
+/* hero */
+
+/* about */
+.about-box img{
+    width: 300px;
+}
+
+/* service */
+.service-box .service i{
+    font-size: 30px;
+}
+/* service */
+/* contact */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 0;
+}
+
+.contact-form {
+  max-width: 600px;
+  margin: auto;
+  padding: 30px;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.contact-form h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+/* Label */
+.contact-form label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: #333;
+}
+
+/* Input Group */
+.input-group {
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.input-group input,
+.input-group textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
+}
+
+/* Placeholder Styling */
+.input-group input::placeholder,
+.input-group textarea::placeholder {
+  color: #999;
+}
+
+/* Submit Button */
+.submit-btn {
+  display: block;
+  width: 100%;
+  padding: 12px;
+  background-color: #e01c1c; 
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+.submit-btn:hover {
+  background-color: #0056b3; /* Warna lebih tua saat hover */
+}
+/* contact */
+/* Footer Styling */
+footer.bg-danger {
+  background-color: #dc3545 !important; /* Warna merah Bootstrap danger */
+}
+
+footer .text-white {
+  color: #fff;
+}
+
+footer a.text-white {
+  text-decoration: none;
+}
+
+footer a.text-white:hover {
+  color: #f8d7da !important; /* Warna soft merah muda saat dihover */
+}
+
+footer i.fab {
+  transition: color 0.3s ease;
+}
+
+footer i.fab:hover {
+  color: #ffc107; /* Kuning saat dihover (bisa diganti sesuai selera) */
+}
+
+footer .py-4 {
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+}
+/* Styling untuk Gallery */
+.gallery {
+  padding: 50px 0;
+  background-color: #f9f9f9;
+}
+
+.gallery h1 {
+  font-size: 2.5em;
+  margin-bottom: 20px;
+}
+
+.gallery p {
+  font-size: 1.2em;
+  color: #555;
+}
+
+/* Styling untuk Slider */
+.slider-container {
+  display: flex;
+  overflow-x: auto; /* Mengaktifkan scrolling horizontal */
+  scroll-snap-type: x mandatory; /* Menyelaraskan snap point */
+  gap: 10px; /* Jarak antar slide */
+  padding: 10px;
+}
+
+.slide {
+  flex-shrink: 0; /* Mencegah slide mengecil saat ukuran layar kecil */
+  width: calc(33.33% - 10px); /* Ukuran slide (33.33% dari lebar total) */
+  max-width: 300px; /* Lebar maksimal setiap slide */
+  position: relative;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  scroll-snap-align: start; /* Menyelaraskan posisi slide saat scroll */
+}
+
+.slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.5); /* Overlay transparan hitam */
+  padding: 10px;
+  color: white;
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  .slide {
+    width: calc(50% - 10px); /* Untuk layar lebih kecil, gunakan 50% */
+  }
+}
